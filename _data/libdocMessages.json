@@ -1,0 +1,338 @@
+{
+	"copiedToClipboard": {
+		"en": "Copied to clipboard",
+		"fr": "Copié dans le presse-papiers",
+		"it": "Copiato negli appunti",
+		"es": "Copiado al portapapeles"
+	},
+	"code": {
+		"en": "Code",
+		"fr": "Code",
+		"it": "Codice",
+		"es": "Código"
+	},
+	"colorSchemes": {
+		"en": "Color schemes",
+		"fr": "Modes d’apparences",
+		"it": "Modalità visive",
+		"es": "Esquemas de color"
+	},
+	"colorSchemeAuto": {
+		"en": "Automatic",
+		"fr": "Automatique",
+		"it": "Automatica",
+		"es": "Automático"
+	},
+	"colorSchemeDescriptionAuto": {
+		"en": "Based on you operating system preference",
+		"fr": "Basé sur les règles d’affichage de votre système",
+		"it": "Basata sulle preferenze del tuo sistema",
+		"es": "Según la preferencia de tu sistema operativo"
+	},
+	"colorSchemeLight": {
+		"en": "Light",
+		"fr": "Clair",
+		"it": "Chiaro",
+		"es": "Claro"
+	},
+	"colorSchemeDescriptionLight": {
+		"en": "Always apply light mode",
+		"fr": "Toujours appliquer le mode clair",
+		"it": "Applica sempre il tema chiaro",
+		"es": "Usar siempre el modo claro"
+	},
+	"colorSchemeDark": {
+		"en": "Dark",
+		"fr": "Sombre",
+		"it": "Scuro",
+		"es": "Oscuro"
+	},
+	"colorSchemeDescriptionDark": {
+		"en": "Always apply dark mode",
+		"fr": "Toujours appliquer le mode sombre",
+		"it": "Applica sempre il tema scuro",
+		"es": "Usar siempre el modo oscuro"
+	},
+	"copied": {
+		"en": "Copied",
+		"fr": "Copié",
+		"it": "Copiato",
+		"es": "Copiado"
+	},
+	"copy": {
+		"en": "Copy",
+		"fr": "Copier",
+		"it": "Copia",
+		"es": "Copiar"
+	},
+	"copyCode": {
+		"en": "Copy code",
+		"fr": "Copier le code",
+		"it": "Copia il codice",
+		"es": "Copiar código"
+	},
+	"copyHTML": {
+		"en": "Copy HTML",
+		"fr": "Copier le HTML",
+		"it": "Copia l’HTML",
+		"es": "Copiar HTML"
+	},
+	"copyURL": {
+		"en": "Copy URL",
+		"fr": "Copier l’URL",
+		"it": "Copia l’URL",
+		"es": "Copiar URL"
+	},
+	"enable": {
+		"en": "Enable",
+		"fr": "Activer",
+		"it": "Attiva",
+		"es": "Activar"
+	},
+	"goToTopOfPage": {
+		"en": "Go to top of page",
+		"fr": "Aller en haut de page",
+		"it": "Vai in vima alla pagina",
+		"es": "Ir al inicio de la página"
+	},
+	"editThisPage": {
+		"en": "Edit this page",
+		"fr": "Modifier la page",
+		"it": "Modifica la pagina",
+		"es": "Editar esta página"
+	},
+	"height": {
+		"en": "Height",
+		"fr": "Hauteur",
+		"it": "Altezza",
+		"es": "Alto"
+	},
+	"homepage": {
+		"en": "Homepage",
+		"fr": "Page d’accueil",
+		"it": "Pagina iniziale",
+		"es": "Página de inicio"
+	},
+	"homepageShort": {
+		"en": "Home",
+		"fr": "Accueil",
+		"it": "Home",
+		"es": "Inicio"
+	},
+	"inANewTab": {
+		"en": "In a new tab",
+		"fr": "Dans un nouvel onglet",
+		"it": "In una nuova scheda",
+		"es": "En una pestaña nueva"
+	},
+	"lastModified": {
+		"en": "Last modified",
+		"fr": "Dernière modification",
+		"it": "Ultima modifica",
+		"es": "Última modificación"
+	},
+	"menu": {
+		"en": "Menu",
+		"fr": "Menu",
+		"it": "Menu",
+		"es": "Menú"
+	},
+	"noscriptAlert": {
+		"en": "It seems that your browser JavaScript is disabled, LibDoc is set to fallback mode with reduced features.",
+		"fr": "Il semble que JavaScript soit désactivé de votre navigateur, LibDoc est en mode restreint avec des fonctionnalités réduites.",
+		"it": "Sembra che il tuo browser abbia JavaScript disattivato, LibDoc è impostato in modalità di riserva, con funzionalità ridotte.",
+		"es": "Parece que JavaScript está desactivado en tu navegador; LibDoc funciona en modo reducido."
+	},
+	"open": {
+		"en": "Open",
+		"fr": "Ouvrir",
+		"it": "Apri",
+		"es": "Abrir"
+	},
+	"openInANewTab": {
+		"en": "Open in a new tab",
+		"fr": "Ouvrir dans un nouvel onglet",
+		"it": "Apri in una nuova scheda",
+		"es": "Abrir en una pestaña nueva"
+	},
+	"otherCustomLinks": {
+		"en": "Other custom links",
+		"fr": "Autres liens personnalisés",
+		"it": "Altri collegamenti personalizzati",
+		"es": "Otros enlaces"
+	},
+	"page": {
+		"en": "Page",
+		"fr": "Page",
+		"it": "Pagina",
+		"es": "Página"
+	},
+	"pages": {
+		"en": "Pages",
+		"fr": "Pages",
+		"it": "Pagine",
+		"es": "Páginas"
+	},
+	"pagesTagged": {
+		"en": "Pages tagged",
+		"fr": "Pages taguées",
+		"it": "Pagine con tag",
+		"es": "Páginas etiquetadas"
+	},
+	"preferences": {
+		"en": "Preferences",
+		"fr": "Préférences",
+		"it": "Preferenze",
+		"es": "Preferencias"
+	},
+	"reload": {
+		"en": "Reload",
+		"fr": "Recharger",
+		"it": "Ricarica",
+		"es": "Recargar"
+	},
+	"reloaded": {
+		"en": "Reloaded",
+		"fr": "Rechargé",
+		"it": "Ricaricato",
+		"es": "Recargado"
+	},
+	"result": {
+		"en": "result",
+		"fr": "Résultat",
+		"it": "Risultato",
+		"es": "resultado"
+	},
+	"sandbox": {
+		"en": "Sandbox",
+		"fr": "Bac à sable",
+		"it": "Sandbox",
+		"es": "Sandbox"
+	},
+	"sandboxResizeHelper": {
+		"en": "Click and drag to resize code and result",
+		"fr": "Cliquer déplacer pour redimensionner code et résultat",
+		"it": "Clicca e trascina per ridimensionare il codice e il risultato",
+		"es": "Haz clic y arrastra para ajustar el código y el resultado"
+	},
+	"search": {
+		"en": "Search",
+		"fr": "Rechercher",
+		"it": "Cerca",
+		"es": "Buscar"
+	},
+	"searchClear": {
+		"en": "Clear input",
+		"fr": "Effacer la saisie",
+		"it": "Cancella l’input",
+		"es": "Limpiar búsqueda"
+	},
+	"searchMinimumCharacters": {
+		"en": "3 characters min.",
+		"fr": "3 caractères min.",
+		"it": "Almeno 3 aratteri",
+		"es": "Mínimo 3 caracteres."
+	},
+	"searchResultsNoResultForQuery": {
+		"en": "No result for query",
+		"fr": "Aucun résultat pour la requête",
+		"it": "Nessun risultato per questa ricerca",
+		"es": "Sin resultados para la búsqueda"
+	},
+	"searchOccurrence": {
+		"en": "Occurrence search",
+		"fr": "Recherche d’occurrence",
+		"it": "Ricerca di risultato",
+		"es": "Buscar en la página"
+	},
+	"searchOccurrencesCurrent": {
+		"en": "Current search occurrence",
+		"fr": "Occurrence actuelle",
+		"it": "Attuale risultato",
+		"es": "Coincidencia actual"
+	},
+	"searchOccurrencesNext": {
+		"en": "Next search occurrence",
+		"fr": "Occurrence suivante",
+		"it": "Risultato seguente",
+		"es": "Coincidencia siguiente"
+	},
+	"searchOccurrencesPrevious": {
+		"en": "Previous search occurrence",
+		"fr": "Occurrence précédente",
+		"it": "Risultato precedente",
+		"es": "Coincidencia anterior"
+	},
+	"searchOccurrencesStop": {
+		"en": "Stop search occurrences",
+		"fr": "Fermet la recherches d’occurrences",
+		"it": "Ferma la ricerca",
+		"es": "Terminar búsqueda en la página"
+	},
+	"searchPlaceholder": {
+		"en": "Press 🆂 to search",
+		"fr": "Presser 🆂 pour rechercher",
+		"it": "Premere 🆂 per cercare",
+		"es": "Presiona 🆂 para buscar"
+	},
+	"searchSubmit": {
+		"en": "Submit search",
+		"fr": "Lancer la recherche",
+		"it": "Effettua la ricerca",
+		"es": "Buscar"
+	},
+	"tableOfContent": {
+		"en": "Table of content",
+		"fr": "Sommaire",
+		"it": "Indice",
+		"es": "Tabla de contenidos"
+	},
+	"tableOfContentAbbr": {
+		"en": "TOC",
+		"fr": "Sommaire",
+		"it": "Indice",
+		"es": "TDC"
+	},
+	"tag": {
+		"en": "Tag",
+		"fr": "Tag",
+		"it": "Tag",
+		"es": "Etiqueta"
+	},
+	"tagsList": {
+		"en": "Tags list",
+		"fr": "Liste des tags",
+		"it": "Lista dei tag",
+		"es": "Etiquetas"
+	},
+	"tagsListDescription": {
+		"en": "List of every tag available",
+		"fr": "Liste de l’ensemble des tags disponibles",
+		"it": "Lista di tutti i tag disponibili",
+		"es": "Listado de todas las etiquetas"
+	},
+	"toggleFloatingToc": {
+		"en": "Toggle floating Table of content",
+		"fr": "Basculer la table des matières flottante",
+		"it": "Cambia impostazione indice fluttuante",
+		"es": "Mostrar u ocultar la tabla de contenidos flotante"
+	},
+	"top": {
+		"en": "Top",
+		"fr": "Haut",
+		"it": "In cima",
+		"es": "Arriba"
+	},
+	"userPreferences": {
+		"en": "User preferences",
+		"fr": "Préférences utilisateur",
+		"it": "Preferenze dell'utente",
+		"es": "Preferencias de usuario"
+	},
+	"width": {
+		"en": "Width",
+		"fr": "Largeur",
+		"it": "Larghezza",
+		"es": "Ancho"
+	}
+}

@@ -1,0 +1,7 @@
+---
+layout: libdoc_page.liquid
+---
+{{ content }}
+{%- if content contains 'class="language-php"' %}
+<script type="module" src="/assets/php/ejecutar-php.js"></script>
+{%- endif %}

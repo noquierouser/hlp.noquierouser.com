@@ -1,0 +1,29 @@
+{
+    "lang": "es",
+    "siteTitle": "/hlp/",
+    "siteDescription": "Material de estudio, ejercicios y referencia para mis ramos de programación",
+    "author": "Marco González Luengo",
+    "faviconUrl": "/favicon.png",
+    "blogTitle": "Novedades",
+    "blogDescription": "Novedades sobre el material publicado",
+    "productionUrl": "https://hlp.noquierouser.com",
+    "displayTagsListLink": true,
+    "hljsLanguages": [
+        "xml",
+        "javascript",
+        "json",
+        "yaml",
+        "markdown",
+        "css",
+        "bash",
+        "python",
+        "php"
+    ],
+    "customLinks": [
+        {
+            "url": "https://github.com/noquierouser/hlp.noquierouser.com",
+            "text": "GitHub"
+        }
+    ],
+    "editThisPageRootUrl": "https://github.com/noquierouser/hlp.noquierouser.com/blob/main"
+}

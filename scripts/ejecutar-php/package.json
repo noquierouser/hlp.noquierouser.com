@@ -1,0 +1,14 @@
+{
+  "name": "hlp-ejecutar-php",
+  "private": true,
+  "description": "Ejecuta los bloques de código PHP del sitio en el navegador (php-wasm)",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "@php-wasm/universal": "3.1.53",
+    "@php-wasm/web-8-5": "3.1.53",
+    "esbuild": "^0.25.0"
+  }
+}
