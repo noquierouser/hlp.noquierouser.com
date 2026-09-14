@@ -10,6 +10,15 @@ npx @11ty/eleventy --serve   # desarrollo en http://localhost:8080
 npx @11ty/eleventy           # genera el sitio en _site/
 ```
 
+## Despliegue
+
+El sitio se publica en Cloudflare Pages, conectado a este repositorio: cada `git push` a `main` lo compila y publica. Configuración del proyecto:
+
+- **Build command:** `(git fetch --unshallow || true) && npx @11ty/eleventy`
+- **Build output directory:** `_site`
+
+El `git fetch --unshallow` es necesario porque Cloudflare clona el repositorio solo con el último commit. Cada página muestra como "Última modificación" la fecha del último commit de su archivo (`date: git Last Modified`), y sin el historial completo todas mostrarían la misma fecha.
+
 ## Estructura
 
 ```

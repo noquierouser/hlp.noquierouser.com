@@ -3,6 +3,7 @@ title: /hlp/
 description: El directorio de ayuda. Ahora todo te costará un poco menos.
 layout: libdoc_page.liquid
 permalink: index.html
+date: git Last Modified
 ---
 Apuntes, ejercicios y material de referencia para los ramos que dicto.
 
