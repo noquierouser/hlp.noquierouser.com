@@ -43,7 +43,7 @@ La salida ya nos dice la estructura: vamos a **buscar por fecha**, así que es u
 
 Ahora, el pseudocódigo:
 
-```text
+```plaintext
 FUNCIÓN totalPorDia(ventas)
     totales ← diccionario vacío
     PARA CADA venta EN ventas

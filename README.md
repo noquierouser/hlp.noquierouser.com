@@ -32,7 +32,8 @@ ramos/                   Ramos vigentes
         index.md         De qué va la unidad, temas en orden y diapositivas
         <tema>.md        Un tema (ej. arrays.md), con ejemplos ejecutables y ejercicios
 referencia/              Material que sirve a varios ramos
-archivo/                 Material histórico (sitio 2012–2013), sin notas ni anuncios
+archivo/                 Material de ramos anteriores, reescrito y actualizado (notas históricas donde algo cambió)
+redirecciones.liquid     Genera _redirects para Cloudflare Pages: URL del sitio antiguo → páginas nuevas
 assets/                  PDFs, imágenes y zips; se copian tal cual (misma ruta que el contenido)
   php/                   Ejecutor de PHP compilado (generado desde scripts/ejecutar-php)
 sandboxes/               Demos HTML/JS para el shortcode {% sandbox %}
