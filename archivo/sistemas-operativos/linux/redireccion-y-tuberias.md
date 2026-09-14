@@ -79,8 +79,10 @@ ls --help | less
 
 La ayuda de `ls` es tan larga que no cabe en la pantalla. Con la tubería, en vez de salir a la pantalla, entra a `less`, que la muestra paginada.
 
-```plaintext
-ls --help ──stdout──▶ | ──stdin──▶ less ──stdout──▶ pantalla
+```mermaid Una tubería entre ls y less
+flowchart LR
+    A["ls --help"] -->|"stdout → stdin"| B[less]
+    B -->|stdout| C[Pantalla]
 ```
 
 Se pueden encadenar tantas como quieras:

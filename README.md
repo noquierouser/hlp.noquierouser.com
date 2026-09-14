@@ -88,6 +88,22 @@ npm install
 npm run build   # escribe en assets/php/
 ```
 
+## Diagramas
+
+Los bloques ` ```mermaid ` se convierten en SVG **al compilar**, con [beautiful-mermaid](https://github.com/lukilabs/beautiful-mermaid) (lo hace [`scripts/eleventy-hlp.js`](scripts/eleventy-hlp.js)). No se carga JavaScript en el navegador, los colores siguen el modo claro u oscuro de LibDoc y lo que va después de `mermaid` es el título de la figura:
+
+````markdown
+```mermaid Una tubería entre ls y less
+flowchart LR
+    A["ls --help"] -->|stdout| B[less]
+```
+````
+
+- Tipos soportados: `flowchart`, `stateDiagram-v2`, `sequenceDiagram`, `classDiagram`, `erDiagram` y `xychart-beta`. **No hay Gantt.**
+- El trazado automático se enreda con grafos que tienen ciclos (por ejemplo, los estados de un proceso). En esos casos, un diagrama en texto dentro de ` ```plaintext ` queda más claro.
+- En diagramas de texto, usar solo caracteres ASCII (`+ - | > < ^ v`): los caracteres de dibujo de cajas se desalinean con la fuente del sitio.
+- Un diagrama con errores detiene la compilación e indica el archivo.
+
 ## Actualizar LibDoc
 
 1. Reemplaza `_data/`, `_includes/`, `core/`, `.eleventy.js` y `package*.json` por los de la versión nueva, y corre `npm install`. **Conserva `_includes/hlp_pagina.liquid`**, que es propio.
@@ -97,6 +113,8 @@ npm run build   # escribe en assets/php/
    node scripts/ajustar-libdoc.mjs
    ```
 
-   El script hace dos cosas:
+   El script:
    - agrega la traducción al español de la interfaz, que LibDoc no incluye. Los textos están en [`scripts/libdoc-es.json`](scripts/libdoc-es.json), y si la versión nueva agrega textos, avisa cuáles quedaron en inglés;
-   - hace que las migas de pan muestren el título de cada página en vez de su `key`, que aquí es la URL.
+   - hace que las migas de pan muestren el título de cada página en vez de su `key`, que aquí es la URL;
+   - agrega a `.eleventy.js` la carga del plugin propio del sitio ([`scripts/eleventy-hlp.js`](scripts/eleventy-hlp.js), que convierte los diagramas);
+   - agrega a `package.json` las dependencias propias (`beautiful-mermaid`). Si avisa que las agregó, corre `npm install` de nuevo.

@@ -34,3 +34,31 @@ if (migas.includes("{{ item.title }}")) {
 } else {
     console.warn("Migas de pan: no se encontró {{ item.key }}; revisar _includes/libdoc_breadcrumb.liquid a mano.");
 }
+
+// 3. Cargar el plugin propio del sitio (scripts/eleventy-hlp.js) desde .eleventy.js.
+const rutaConfig = ruta(".eleventy.js");
+let config = readFileSync(rutaConfig, "utf8");
+if (config.includes("scripts/eleventy-hlp.js")) {
+    console.log("Plugin del sitio: ya está cargado en .eleventy.js.");
+} else if (config.includes("// END LibDoc imports") && config.includes("// END PLUGINS")) {
+    config = config
+        .replace("// END LibDoc imports", 'import hlp                                  from "./scripts/eleventy-hlp.js";\n// END LibDoc imports')
+        .replace("    // END PLUGINS", "    eleventyConfig.addPlugin(hlp);\n    // END PLUGINS");
+    writeFileSync(rutaConfig, config);
+    console.log("Plugin del sitio: agregado a .eleventy.js.");
+} else {
+    console.warn("Plugin del sitio: no se encontraron las marcas de .eleventy.js; agregar a mano el import y addPlugin(hlp).");
+}
+
+// 4. Dependencias propias del sitio en package.json.
+const DEPENDENCIAS = { "beautiful-mermaid": "^1.1.3" };
+const rutaPaquete = ruta("package.json");
+const paquete = JSON.parse(readFileSync(rutaPaquete, "utf8"));
+const faltanDependencias = Object.keys(DEPENDENCIAS).filter((nombre) => !paquete.dependencies?.[nombre]);
+if (faltanDependencias.length === 0) {
+    console.log("Dependencias del sitio: ya están en package.json.");
+} else {
+    paquete.dependencies = { ...paquete.dependencies, ...DEPENDENCIAS };
+    writeFileSync(rutaPaquete, JSON.stringify(paquete, null, 2) + "\n");
+    console.log(`Dependencias del sitio: agregadas (${faltanDependencias.join(", ")}). Ejecuta npm install.`);
+}

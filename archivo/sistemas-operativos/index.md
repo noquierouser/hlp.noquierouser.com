@@ -11,4 +11,4 @@ Este material viene de la ayudantía de laboratorio de Sistemas Operativos que h
 ## Recorridos
 
 - [Linux en la práctica](/archivo/sistemas-operativos/linux/index.md): la terminal, usuarios y permisos, archivos, procesos, servicios y redes, con ejercicios resueltos.
-- **Cómo funciona un sistema operativo:** procesos, planificación, memoria, archivos y seguridad, desde la teoría. *En preparación.*
+- [Cómo funciona un sistema operativo](/archivo/sistemas-operativos/teoria/index.md): procesos, planificación, memoria, archivos y seguridad, desde la teoría, con simulaciones que puedes ejecutar.

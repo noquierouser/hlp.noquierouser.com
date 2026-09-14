@@ -14,14 +14,11 @@ Un computador es un montón de piezas: procesador, memoria, disco, tarjeta de re
 
 Ahí entra el **sistema operativo**. Hace de puente entre los programas y el hardware, y además reparte los recursos: decide qué programa usa el procesador, cuánta memoria le toca a cada uno y quién puede leer qué archivo.
 
-```plaintext
-   Usuario
-      │
-   Programas         (navegador, editor, terminal)
-      │
-   Kernel            (el núcleo del sistema operativo)
-      │
-   Hardware          (procesador, memoria, discos, red)
+```mermaid El sistema operativo, entre los programas y el hardware
+flowchart TD
+    U[Usuario] --> P["Programas<br/>navegador, editor, terminal"]
+    P --> K["Kernel<br/>el núcleo del sistema operativo"]
+    K --> H["Hardware<br/>procesador, memoria, discos, red"]
 ```
 
 La parte central del sistema operativo es el **kernel** (núcleo): el programa que tiene control total del hardware. **Linux, en rigor, es un kernel**, escrito principalmente en C. Todo lo demás (la terminal, los comandos, el escritorio) son programas que corren encima.

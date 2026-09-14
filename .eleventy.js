@@ -9,6 +9,7 @@ import pluginRss                            from "@11ty/eleventy-plugin-rss";
 // START LibDoc imports
 import libdocConfig                         from "./_data/libdocConfig.js";
 import libdocFunctions                      from "./_data/libdocFunctions.js";
+import hlp                                  from "./scripts/eleventy-hlp.js";
 // END LibDoc imports
 
 export default function(eleventyConfig) {
@@ -18,6 +19,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, libdocFunctions.pluginsParameters.eleventyImageTransform());
     eleventyConfig.addPlugin(pluginRss);
+    eleventyConfig.addPlugin(hlp);
     // END PLUGINS
 
     // START FILTERS
