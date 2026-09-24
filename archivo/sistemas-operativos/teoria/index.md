@@ -14,8 +14,11 @@ No hace falta saber programar en C ni conocer los circuitos del computador. Algu
 2. [El computador por dentro](/archivo/sistemas-operativos/teoria/el-computador-por-dentro.md): interrupciones, E/S, la jerarquía de memoria y la protección por hardware.
 3. [Estructura del sistema operativo](/archivo/sistemas-operativos/teoria/estructura-del-sistema.md): servicios, llamadas al sistema, tipos de núcleo y máquinas virtuales.
 4. [Procesos](/archivo/sistemas-operativos/teoria/procesos.md): estados, creación, hilos y comunicación entre procesos.
+5. [Planificación de CPU](/archivo/sistemas-operativos/teoria/planificacion-de-cpu.md): FCFS, SJF, prioridades, Round Robin y colas multinivel, con simulador.
+6. [Sincronización](/archivo/sistemas-operativos/teoria/sincronizacion.md): condiciones de carrera, sección crítica, semáforos, monitores y problemas clásicos.
+7. [Interbloqueos](/archivo/sistemas-operativos/teoria/interbloqueos.md): las cuatro condiciones, prevención, algoritmo del banquero y detección.
 
-*Los temas de planificación de CPU, sincronización, interbloqueos, memoria, archivos, E/S, almacenamiento y seguridad están en preparación.*
+*Los temas de memoria, archivos, E/S, almacenamiento y seguridad están en preparación.*
 
 ## Para leer más
 

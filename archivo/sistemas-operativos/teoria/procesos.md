@@ -442,4 +442,4 @@ En la simulación del productor y el consumidor, esto se ve cuando el productor 
 
 ---
 
-Vuelve al índice de **[Cómo funciona un sistema operativo](/archivo/sistemas-operativos/teoria/index.md)**.
+Sigue con **[Planificación de CPU](/archivo/sistemas-operativos/teoria/planificacion-de-cpu.md)**.
