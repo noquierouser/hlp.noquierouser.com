@@ -94,10 +94,10 @@
     main picture:has(.long-shadow) img {
         box-shadow: 0em 0em 60px var(--ita-colors-neutral-100), 0em 0em 10px var(--ita-colors-neutral-300), 1em 1em 40px var(--ita-colors-neutral-100);
     }
-    main > pre {
+    main pre {
         background-color: var(--ita-colors-primary-100);
     }
-    main > pre > code {
+    main pre > code {
         box-shadow: none;
     }
 

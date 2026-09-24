@@ -821,7 +821,7 @@ const libdocUi = {
         }
     },
     createCopyCodeOnCodeBlocks: function() {
-        const elsPre = document.querySelectorAll('main>pre');
+        const elsPre = document.querySelectorAll('main pre');
         if (elsPre.length > 0) {
             elsPre.forEach(function(elPre) {
                 elPre.style.paddingTop = '0';

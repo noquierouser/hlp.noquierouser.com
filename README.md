@@ -118,3 +118,4 @@ flowchart LR
    - hace que las migas de pan muestren el título de cada página en vez de su `key`, que aquí es la URL;
    - agrega a `.eleventy.js` la carga del plugin propio del sitio ([`scripts/eleventy-hlp.js`](scripts/eleventy-hlp.js), que convierte los diagramas);
    - agrega a `package.json` las dependencias propias (`beautiful-mermaid`). Si avisa que las agregó, corre `npm install` de nuevo.
+   - hace que los bloques de código dentro de `<details>` reciban el mismo tratamiento que los demás (barra «Copiar código», etiqueta del lenguaje y, por lo tanto, el botón «Ejecutar»), que LibDoc reserva para los que cuelgan directo de `<main>`.

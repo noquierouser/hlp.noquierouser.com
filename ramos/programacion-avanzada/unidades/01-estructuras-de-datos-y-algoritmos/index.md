@@ -23,9 +23,11 @@ Están en orden: cada uno se apoya en los anteriores.
 10. [Diseñar algoritmos](/ramos/programacion-avanzada/unidades/01-estructuras-de-datos-y-algoritmos/disenar-algoritmos.md): entrada, proceso, salida y pseudocódigo antes del código.
 11. [Probar algoritmos](/ramos/programacion-avanzada/unidades/01-estructuras-de-datos-y-algoritmos/probar-algoritmos.md): casos borde, tabla de casos y un verificador casero.
 12. [Eficiencia](/ramos/programacion-avanzada/unidades/01-estructuras-de-datos-y-algoritmos/eficiencia.md): medir tiempos, contar operaciones y cómo crece el costo.
+13. [Cazar el cuello de botella](/ramos/programacion-avanzada/unidades/01-estructuras-de-datos-y-algoritmos/optimizacion.md): encontrar dónde se va el tiempo, optimizar y demostrar que sigue funcionando.
 
 ## Diapositivas
 
 - [Introducción a PHP](/assets/ramos/programacion-avanzada/introduccion-a-php.pdf) (PDF)
 - [Pilas y colas](/assets/ramos/programacion-avanzada/pilas-y-colas.pdf) (PDF)
 - [Del problema al algoritmo](/assets/ramos/programacion-avanzada/del-problema-al-algoritmo.pdf) (PDF)
+- [Cazar el cuello de botella](/assets/ramos/programacion-avanzada/cazar-el-cuello-de-botella.pdf) (PDF)

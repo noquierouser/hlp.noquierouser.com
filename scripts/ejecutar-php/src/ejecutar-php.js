@@ -66,12 +66,12 @@ function ejecutar(codigo, alCargar) {
 // ---------- Interfaz ----------
 
 const ESTILOS = `
-.comandos-php [hidden], main > pre > code.salida-php[hidden] { display: none !important; }
-main > pre > code.salida-php { margin-top: var(--ita-spacings-5); white-space: pre-wrap; }
-main > pre > code.salida-php.error { box-shadow: inset 4px 0 0 var(--ita-colors-danger-500, #d33); }
-main > pre > code.salida-php.estado { opacity: .75; font-style: italic; }
-main > pre > code[contenteditable] { outline: none; cursor: text; }
-main > pre > code[contenteditable]:focus { box-shadow: 0 0 0 2px var(--ita-colors-primary-500, #06c); }
+.comandos-php [hidden], main pre > code.salida-php[hidden] { display: none !important; }
+main pre > code.salida-php { margin-top: var(--ita-spacings-5); white-space: pre-wrap; }
+main pre > code.salida-php.error { box-shadow: inset 4px 0 0 var(--ita-colors-danger-500, #d33); }
+main pre > code.salida-php.estado { opacity: .75; font-style: italic; }
+main pre > code[contenteditable] { outline: none; cursor: text; }
+main pre > code[contenteditable]:focus { box-shadow: 0 0 0 2px var(--ita-colors-primary-500, #06c); }
 .comandos-php { display: flex; gap: var(--ita-spacings-5); margin-right: auto; }
 @media print { .comandos-php, .salida-php { display: none !important; } }
 `;
@@ -174,7 +174,7 @@ function prepararBloque(elPre, elCodigo) {
 }
 
 function iniciar() {
-    const bloques = [...document.querySelectorAll("main > pre > code.language-php")]
+    const bloques = [...document.querySelectorAll("main pre > code.language-php")]
         .filter((elCodigo) => elCodigo.textContent.trimStart().startsWith("<?php"));
     if (bloques.length === 0 || typeof Worker === "undefined" || typeof WebAssembly === "undefined") return;
 

@@ -62,3 +62,31 @@ if (faltanDependencias.length === 0) {
     writeFileSync(rutaPaquete, JSON.stringify(paquete, null, 2) + "\n");
     console.log(`Dependencias del sitio: agregadas (${faltanDependencias.join(", ")}). Ejecuta npm install.`);
 }
+
+// 5. Barra "Copiar código" también en los bloques dentro de <details>.
+//    LibDoc solo toma los <pre> que cuelgan directo de <main>, y el botón
+//    "Ejecutar" del sitio se apoya en esa barra.
+const rutaUi = ruta("core/assets/js/ui.js");
+const ui = readFileSync(rutaUi, "utf8");
+if (ui.includes("querySelectorAll('main pre')")) {
+    console.log("Bloques de código: ya incluyen los que están dentro de <details>.");
+} else if (ui.includes("querySelectorAll('main>pre')")) {
+    writeFileSync(rutaUi, ui.replace("querySelectorAll('main>pre')", "querySelectorAll('main pre')"));
+    console.log("Bloques de código: ahora incluyen los que están dentro de <details>.");
+} else {
+    console.warn("Bloques de código: no se encontró querySelectorAll('main>pre') en core/assets/js/ui.js.");
+}
+
+//    Los estilos de LibDoc también apuntan solo a los <pre> hijos de <main>.
+const HOJAS = ["core/assets/css/ds__defaults.css", "core/assets/css/ds__colors.css", "core/assets/css/ds__dark_mode.css"];
+for (const hoja of HOJAS) {
+    const rutaHoja = ruta(hoja);
+    const css = readFileSync(rutaHoja, "utf8");
+    const ajustado = css.replace(/main\s*>\s*pre/g, "main pre");
+    if (ajustado === css) {
+        console.log(`Estilos de código (${hoja}): sin cambios.`);
+    } else {
+        writeFileSync(rutaHoja, ajustado);
+        console.log(`Estilos de código (${hoja}): ahora alcanzan a los bloques dentro de <details>.`);
+    }
+}

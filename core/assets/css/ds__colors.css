@@ -137,12 +137,12 @@ main > *:not(pre) code {
     background-color: var(--ita-colors-primary-200);
     color: var(--ita-colors-primary-800);
 }
-main > pre {
+main pre {
     background-color: var(--ita-colors-primary-200);
     border-color: var(--ita-colors-primary-300);
     box-shadow: inset 0.3em 0.3em 2em #0B427C44;
 }
-main > pre > code::before {
+main pre > code::before {
     border-bottom-color: #385267;
 }
 /* TABLES */
@@ -464,10 +464,10 @@ main .sandbox__iframe_wrapper a,
     body {
         background: none;
     }
-    main > pre {
+    main pre {
         background-color: transparent;
     }
-    main > pre > code {
+    main pre > code {
         background-color: transparent;
     }
 }

@@ -190,4 +190,4 @@ Encontrar dónde se va el tiempo (el *cuello de botella*) y mejorarlo, comparand
 
 ---
 
-Sigue con **[Clases y objetos](/ramos/programacion-avanzada/unidades/02-poo-avanzada/clases-y-objetos.md)**, en la unidad 2.
+Sigue con **[Cazar el cuello de botella](/ramos/programacion-avanzada/unidades/01-estructuras-de-datos-y-algoritmos/optimizacion.md)**.

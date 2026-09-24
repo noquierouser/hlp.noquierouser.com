@@ -447,18 +447,18 @@ main > *:not(pre) code {
 main pre:not(:has(.hljs)) {
     overflow: auto;
 }
-main > pre {
+main pre {
     padding: var(--ita-spacings-9);
     border-radius: 12px;
     border-width: 1px;
     border-style: solid;
     overflow: hidden;
 }
-main > pre > code {
+main pre > code {
     border-radius: 6px;
     box-shadow: var(--libdoc-long-shadow-alt);
 }
-main > pre > code::before {
+main pre > code::before {
     content: attr(data-language-name);
     display: block;
     padding-bottom: var(--ita-spacings-2);
@@ -928,7 +928,7 @@ input[type="radio"] ~ label::before {
         font-size: var(--ita-fontSizes-4);
     }
     code,
-    main > pre > code::before {
+    main pre > code::before {
         font-size: var(--ita-fontSizes-2);
     }
     main > * {
@@ -989,7 +989,7 @@ input[type="radio"] ~ label::before {
     main > *:not(header) li::marker {
         font-size: var(--ita-fontSizes-2);
     }
-    main > pre {
+    main pre {
         padding: var(--ita-spacings-5);
     }
     main > picture,
@@ -1072,19 +1072,19 @@ input[type="radio"] ~ label::before {
     main h4 a,
     main h5 a,
     main h6 a,
-    main > pre > div:first-child {
+    main pre > div:first-child {
         display: none;
     }
-    main > pre {
+    main pre {
         border: none;
         box-shadow: none;
     }
-    main > pre > code {
+    main pre > code {
         box-shadow: none;
         white-space: pre-wrap;
         font-variation-settings: "slnt" 0, "CASL" 0, "CRSV" 0, "MONO" 1, "wght" 500;
     }
-    main > pre > code::before {
+    main pre > code::before {
         margin-top: 1em;
     }
     main h1,
