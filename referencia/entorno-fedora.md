@@ -83,11 +83,17 @@ Lerd levanta PHP, un servidor web y, cuando haga falta, una base de datos. Todo 
 ### Instalar
 
 ```bash
-sudo dnf copr enable georged/lerd
-sudo dnf install lerd
+curl -fsSL https://lerd.sh/install.sh | bash
 ```
 
-La primera línea agrega un repositorio **COPR**. Son repositorios que mantienen personas o proyectos por fuera de Fedora; este es el oficial de Lerd. La segunda instala el programa junto con Podman, que es el motor de contenedores que usa.
+Es el instalador oficial, tal como aparece en [lerd.sh](https://lerd.sh/getting-started/installation). `curl` lo descarga y `bash` lo ejecuta. El instalador hace todo esto:
+
+1. Revisa si falta Podman, que es el motor de contenedores que usa, y ofrece instalarlo. Dile que sí.
+2. Pide tu contraseña **una sola vez**, al principio, para los pocos ajustes que necesitan permisos de administrador.
+3. Descarga Lerd y lo deja en `~/.local/bin`.
+4. Prepara el entorno: Composer, el servidor web y las direcciones `.test`.
+
+Cuando salga una versión nueva, se actualiza con `lerd update`.
 
 Aprovecha de instalar Git, que vas a necesitar muy pronto:
 
@@ -137,26 +143,20 @@ La [documentación de Lerd](https://lerd.sh/getting-started/quick-start) tiene e
 
 ## 3. PhpStorm
 
-PhpStorm se instala con **JetBrains Toolbox**, una aplicación que instala y mantiene al día los programas de JetBrains.
+En Fedora, PhpStorm se instala con `dnf` desde un repositorio **COPR**. Los COPR son repositorios que mantienen personas o proyectos por fuera de Fedora, y hay que activarlos antes de usarlos:
 
-1. Descarga Toolbox para Linux desde [jetbrains.com/toolbox-app](https://www.jetbrains.com/toolbox-app/). Es un archivo `.tar.gz`.
-2. Descomprímelo y ejecútalo:
+```bash
+sudo dnf copr enable medzik/jetbrains
+sudo dnf install phpstorm
+```
 
-    ```bash
-    cd ~/Descargas
-    tar -xzf jetbrains-toolbox-*.tar.gz
-    ./jetbrains-toolbox-*/bin/jetbrains-toolbox
-    ```
+La primera línea activa el repositorio y pide que confirmes con `y`. La segunda instala el programa, que queda en el menú de aplicaciones como cualquier otro.
 
-    Si tu sistema está en inglés, la carpeta es `~/Downloads`.
-3. Toolbox se instala solo y queda en el menú de aplicaciones. Ya puedes borrar lo que descargaste.
-4. En la lista de Toolbox, busca **PhpStorm** y presiona **Install**.
+{% alert 'Este repositorio dejó de recibir versiones nuevas en octubre de 2026. La versión de PhpStorm que trae sirve para todo lo que vamos a hacer. Más adelante veremos cómo pasar a otra forma de instalarlo.', 'info', 'Sobre este repositorio' %}
 
 ### La licencia
 
-PhpStorm es de pago, pero **gratis para estudiantes**. Pide la [licencia educativa](https://www.jetbrains.com/community/education/#students) con tu correo institucional, y después inicia sesión con tu cuenta de JetBrains en Toolbox o en PhpStorm. Mientras llega la aprobación puedes usar el período de prueba.
-
-{% alert 'El repositorio COPR medzik/jetbrains fue descontinuado en octubre de 2026: ya no recibe versiones nuevas ni correcciones de seguridad. Si instalaste PhpStorm desde ahí, sigue funcionando, pero no se va a actualizar más. Conviene desinstalar ese paquete, quitar el repositorio con <code>sudo dnf copr remove medzik/jetbrains</code> e instalar PhpStorm con Toolbox. Tus proyectos y tu configuración no se pierden.', 'warning', 'Si lo instalaste desde el COPR de medzik' %}
+PhpStorm es de pago, pero **gratis para estudiantes**. Pide la [licencia educativa](https://www.jetbrains.com/community/education/#students) con tu correo institucional, y después inicia sesión con tu cuenta de JetBrains en PhpStorm. Mientras llega la aprobación puedes usar el período de prueba.
 
 ## Comprobar que todo quedó bien
 
