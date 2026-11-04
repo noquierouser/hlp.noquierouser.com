@@ -140,14 +140,11 @@ Un buen primer ejercicio: abre `routes/web.php`, pon el cursor sobre `view` y pr
 
 ## Si un atajo no responde
 
-A veces el escritorio se queda con una combinación de teclas antes de que llegue a PhpStorm. En GNOME, el escritorio de Fedora, suele pasar con dos de esta página:
+Los atajos de esta página son los que PhpStorm trae por defecto. En Linux pueden variar por dos motivos: el escritorio se queda con algunas combinaciones antes de que lleguen a PhpStorm, y PhpStorm puede partir con un mapa de teclas adaptado al escritorio que detecta.
 
-- `Ctrl+Alt+Flecha izquierda`, que GNOME usa para cambiar de espacio de trabajo.
-- `Alt+F7`, que GNOME usa para mover la ventana.
+Si un atajo no hace nada, o hace otra cosa, busca la acción por su nombre con `Ctrl+Shift+A`: ahí aparece la combinación que tiene asignada **en tu equipo**.
 
-Hay dos salidas. Puedes liberar la combinación en el sistema, en *Configuración → Teclado → Atajos de teclado*. O puedes asignarle otra en PhpStorm, en *Settings → Keymap*.
-
-Para cualquier otro atajo que no haga nada, busca la acción por su nombre con `Ctrl+Shift+A`: ahí aparece la combinación que tiene asignada.
+Y si la combinación la está usando el escritorio, hay dos salidas. Puedes liberarla en KDE, en *Preferencias del sistema → Teclado → Atajos*. O puedes asignarle otra en PhpStorm, en *Settings → Keymap*.
 
 La lista completa está en la [referencia de atajos de PhpStorm](https://www.jetbrains.com/help/phpstorm/mastering-keyboard-shortcuts.html).
 

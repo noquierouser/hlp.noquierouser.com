@@ -12,7 +12,7 @@ Para trabajar en un proyecto de verdad hacen falta tres piezas, y cada una hace 
 
 | Pieza | Para qué sirve |
 |---|---|
-| **[Fedora](https://fedoraproject.org/workstation/)** | El sistema operativo. Es Linux, que es donde corre casi todo lo que vas a publicar algún día. |
+| **[Fedora KDE](https://fedoraproject.org/kde/)** | El sistema operativo. Es Linux, que es donde corre casi todo lo que vas a publicar algún día. |
 | **[Lerd](https://lerd.sh)** | Deja PHP, Composer y un servidor web funcionando, y le da a cada proyecto una dirección como `mi-proyecto.test`. |
 | **[PhpStorm](https://www.jetbrains.com/phpstorm/)** | El editor: autocompleta, avisa errores antes de ejecutar y trae Git integrado. |
 
@@ -31,12 +31,14 @@ Instalar un sistema operativo toca el disco, así que estos pasos no son opciona
 
 {% alert 'Si algo sale mal a medio camino, un respaldo convierte un desastre en una molestia. Hazlo antes, no después.', 'warning', 'Primero el respaldo' %}
 
-## 1. Fedora Workstation
+## 1. Fedora KDE Plasma Desktop
 
 ### Preparar el pendrive
 
-1. Descarga **Fedora Media Writer** desde [fedoraproject.org/workstation/download](https://fedoraproject.org/workstation/download). Hay versión para Windows, macOS y Linux.
-2. Ábrelo, elige **Fedora Workstation** y tu pendrive. El programa descarga la imagen y la graba.
+Fedora viene en varias ediciones, que se diferencian sobre todo por el escritorio. Usamos **Fedora KDE Plasma Desktop**, que trae el escritorio KDE Plasma: barra abajo, menú de aplicaciones a la izquierda y ventanas con sus botones de siempre. Viniendo de Windows, todo está más o menos donde uno lo busca.
+
+1. Descarga **Fedora Media Writer** desde [fedoraproject.org/kde/download](https://fedoraproject.org/kde/download). Hay versión para Windows, macOS y Linux.
+2. Ábrelo, elige **Fedora KDE Plasma Desktop** y tu pendrive. El programa descarga la imagen y la graba.
 
 En clases instalamos Fedora 44. Si al descargar te ofrece una versión más nueva, sirve igual: todo lo de esta página funciona en las versiones con soporte.
 
@@ -53,11 +55,11 @@ El instalador pregunta poco: idioma, teclado y qué hacer con el disco. Esa últ
 - **Compartir el disco con el otro sistema**, para conservar Windows y elegir cuál usar al encender.
 - **Usar el disco completo**, que borra todo lo que hay.
 
-Al terminar, reinicia, saca el pendrive y crea tu usuario. Ese usuario es administrador: su contraseña es la que te va a pedir `sudo`.
+En el proceso vas a crear tu usuario. Ese usuario es administrador: su contraseña es la que te va a pedir `sudo`. Al terminar, reinicia y saca el pendrive.
 
 ### Lo primero después de instalar
 
-Abre la terminal y actualiza el sistema:
+Abre **Konsole**, la terminal de KDE (está en el menú de aplicaciones), y actualiza el sistema:
 
 ```bash
 sudo dnf upgrade --refresh
