@@ -2,7 +2,7 @@
 title: Entorno de trabajo en Fedora
 description: Instalar Fedora, Lerd y PhpStorm para programar en PHP sobre Linux
 eleventyNavigation:
-    order: 20
+    order: 10
 tags:
     - linux
     - php
@@ -177,4 +177,4 @@ Si algo falla, **guarda el mensaje de error completo**, tal cual sale. Sin el me
 
 ---
 
-Sigue con **[Conociendo PhpStorm](/referencia/conociendo-phpstorm.md)**.
+Sigue con **[Conociendo PhpStorm](/ramos/programacion-avanzada/construyendo-un-blockbuster/conociendo-phpstorm.md)**.

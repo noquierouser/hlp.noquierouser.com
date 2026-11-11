@@ -2,14 +2,14 @@
 title: Conociendo PhpStorm
 description: Dónde está cada cosa, cómo moverte por un proyecto y los atajos que más rinden
 eleventyNavigation:
-    order: 30
+    order: 20
 tags:
     - phpstorm
     - herramientas
 ---
 PhpStorm tiene cientos de botones y al principio abruma. La buena noticia: para trabajar bien basta con conocer cuatro zonas de la ventana y una docena de atajos. El resto lo vas descubriendo cuando lo necesites.
 
-Si todavía no lo tienes instalado, parte por [Entorno de trabajo en Fedora](/referencia/entorno-fedora.md).
+Si todavía no lo tienes instalado, parte por [Entorno de trabajo en Fedora](/ramos/programacion-avanzada/construyendo-un-blockbuster/entorno-fedora.md).
 
 ## Abrir un proyecto
 
@@ -150,4 +150,4 @@ La lista completa está en la [referencia de atajos de PhpStorm](https://www.jet
 
 ---
 
-Sigue con **[De tu computador a GitHub](/ramos/programacion-avanzada/unidades/04-calidad-e-integracion/de-tu-computador-a-github.md)**, en Programación Avanzada.
+Sigue con **[De tu computador a GitHub](/ramos/programacion-avanzada/construyendo-un-blockbuster/de-tu-computador-a-github.md)**.

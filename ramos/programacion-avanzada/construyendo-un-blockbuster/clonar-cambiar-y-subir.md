@@ -2,13 +2,13 @@
 title: Clonar, cambiar y subir
 description: Bajar un proyecto que ya existe, hacerlo funcionar, modificarlo y publicar tus cambios
 eleventyNavigation:
-    order: 20
+    order: 40
 tags:
     - git
     - github
     - laravel
 ---
-En [De tu computador a GitHub](/ramos/programacion-avanzada/unidades/04-calidad-e-integracion/de-tu-computador-a-github.md) el proyecto nació en tu equipo y lo subiste. En el trabajo real casi siempre es al revés: el proyecto ya existe, alguien lo empezó, y tú llegas a sumarte. Eso es **clonar**.
+En [De tu computador a GitHub](/ramos/programacion-avanzada/construyendo-un-blockbuster/de-tu-computador-a-github.md) el proyecto nació en tu equipo y lo subiste. En el trabajo real casi siempre es al revés: el proyecto ya existe, alguien lo empezó, y tú llegas a sumarte. Eso es **clonar**.
 
 Los ejemplos usan `blockbuster`, el proyecto del ramo. Sirven igual para cualquier repositorio: cambia el usuario y el nombre.
 
@@ -54,7 +54,7 @@ Desde PhpStorm se hace con **Clone Repository** en la pantalla de bienvenida, o 
 
 ## 2. Hacer que funcione
 
-Si abres `http://blockbuster.test` justo después de clonar, vas a ver un error. No hiciste nada mal: al proyecto le falta todo lo que [no se sube a GitHub](/ramos/programacion-avanzada/unidades/04-calidad-e-integracion/de-tu-computador-a-github.md#lo-que-no-se-sube).
+Si abres `http://blockbuster.test` justo después de clonar, vas a ver un error. No hiciste nada mal: al proyecto le falta todo lo que [no se sube a GitHub](/ramos/programacion-avanzada/construyendo-un-blockbuster/de-tu-computador-a-github.md#lo-que-no-se-sube).
 
 | Falta | Por qué | Se arregla con |
 |---|---|---|

@@ -242,7 +242,7 @@ Un proceso tradicional tiene un solo hilo. Un proceso **multihilo** puede hacer 
 - Si un hilo se **bloquea** esperando E/S, los demás siguen trabajando.
 - En un procesador con varios núcleos, los hilos corren **en paralelo**.
 
-El costo de compartir memoria es que dos hilos pueden **pisarse** al modificar los mismos datos. Es el problema de la sincronización, que tiene su propio tema, y que en PHP se ve en la unidad de [Concurrencia y asincronía](/ramos/programacion-avanzada/unidades/03-concurrencia-y-asincronia/index.md) de Programación Avanzada.
+El costo de compartir memoria es que dos hilos pueden **pisarse** al modificar los mismos datos. Es el problema de la sincronización, que tiene su propio tema, y que en PHP se ve en la unidad de [Concurrencia y asincronía](/ramos/programacion-avanzada/index.md) de Programación Avanzada.
 
 ### Hilos de usuario y de kernel
 

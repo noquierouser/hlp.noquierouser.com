@@ -2,7 +2,7 @@
 title: De tu computador a GitHub
 description: Crear una cuenta, armar un proyecto Laravel, ponerlo bajo Git y publicarlo
 eleventyNavigation:
-    order: 10
+    order: 30
 tags:
     - git
     - github
@@ -10,7 +10,7 @@ tags:
 ---
 Un proyecto que vive solo en tu computador tiene dos problemas: si el disco muere, se acabó, y nadie más puede trabajar en él. Esta página resuelve los dos. Al final vas a tener un proyecto Laravel funcionando, con historial de cambios y publicado en GitHub.
 
-Necesitas el [entorno instalado](/referencia/entorno-fedora.md): Lerd, Git y PhpStorm.
+Necesitas el [entorno instalado](/ramos/programacion-avanzada/construyendo-un-blockbuster/entorno-fedora.md): Lerd, Git y PhpStorm.
 
 ## Git y GitHub no son lo mismo
 
@@ -107,7 +107,7 @@ Ese comando hace bastante más que copiar archivos:
 
 Como la carpeta está dentro de `~/Lerd`, el proyecto ya tiene dirección. Abre `http://mi-proyecto.test` en el navegador, o ejecuta `lerd open`, y deberías ver la página de bienvenida de Laravel.
 
-Ábrelo también en PhpStorm: **Open** y eliges la carpeta. Si no conoces el programa, pasa por [Conociendo PhpStorm](/referencia/conociendo-phpstorm.md).
+Ábrelo también en PhpStorm: **Open** y eliges la carpeta. Si no conoces el programa, pasa por [Conociendo PhpStorm](/ramos/programacion-avanzada/construyendo-un-blockbuster/conociendo-phpstorm.md).
 
 ## 5. Poner el proyecto bajo Git
 
@@ -246,4 +246,4 @@ El repositorio de GitHub no estaba vacío: seguramente lo creaste con un README.
 
 ---
 
-Sigue con **[Clonar, cambiar y subir](/ramos/programacion-avanzada/unidades/04-calidad-e-integracion/clonar-cambiar-y-subir.md)**.
+Sigue con **[Clonar, cambiar y subir](/ramos/programacion-avanzada/construyendo-un-blockbuster/clonar-cambiar-y-subir.md)**.

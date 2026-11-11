@@ -781,4 +781,4 @@ Si las cuatro tienen respuesta, la unidad está entendida.
 
 ---
 
-Sigue con **[Clases y objetos](/ramos/programacion-avanzada/unidades/02-poo-avanzada/clases-y-objetos.md)**, en la unidad 2.
+Sigue con **[Clases y objetos](/ramos/programacion-avanzada/unidades/02-poo-avanzada/clases-y-objetos.md)**.
