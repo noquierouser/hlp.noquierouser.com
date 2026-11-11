@@ -26,11 +26,12 @@ index.md                 Portada
 settings.json            Configuración de LibDoc (título, idioma, enlaces)
 ramos/                   Ramos vigentes
   <ramo>/                slug estable y sin año (ej. programacion-avanzada)
-    index.md             Presentación breve, proyecto en curso y listado de unidades
+    index.md             Presentación breve y recorrido del material, en orden
     <proyecto>/          Recorrido de un proyecto, en el orden de las clases (ej. construyendo-un-blockbuster)
       index.md           Etapas del proyecto y sus páginas, en orden
     unidades/
-      index.md           Índice según el programa: cada unidad con todo su material, esté donde esté
+      index.md           Mapa según el programa: cada unidad con todo su material, esté donde esté.
+                         Las unidades no estructuran el menú; solo la 01 conserva su carpeta e índice
       01-<tema>/
         index.md         De qué va la unidad, temas en orden y diapositivas
         <tema>.md        Un tema (ej. arrays.md), con ejemplos ejecutables y ejercicios

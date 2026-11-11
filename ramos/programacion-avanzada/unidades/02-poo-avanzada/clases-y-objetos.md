@@ -2,7 +2,8 @@
 title: Clases y objetos
 description: La pila deja de ser un array suelto y pasa a defenderse sola
 eleventyNavigation:
-    order: 10
+    parent: /ramos/programacion-avanzada/
+    order: 20
 tags:
     - php
     - poo
@@ -74,4 +75,4 @@ var_dump($rojo->alpha, $rojoTransparente->alpha);  // 1.0 y 0.5
 
 El original no cambia: `conAlpha` devuelve un objeto nuevo.
 
-{% alert 'Esta página va a ir creciendo con el resto de la unidad.', 'info' %}
+{% alert 'Esta página va a ir creciendo.', 'info' %}

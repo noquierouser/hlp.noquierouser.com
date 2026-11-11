@@ -2,7 +2,7 @@
 title: Estructuras de datos y algoritmos
 description: Elegir bien dónde guardar los datos y cómo recorrerlos
 eleventyNavigation:
-    title: "1. Estructuras de datos y algoritmos"
+    parent: /ramos/programacion-avanzada/
     order: 10
 ---
 Listas, pilas, colas y diccionarios: cuándo conviene cada una, cómo armar algoritmos que las usen y cómo saber si una solución es más rápida que otra. Todo en PHP, así que partimos por el lenguaje.

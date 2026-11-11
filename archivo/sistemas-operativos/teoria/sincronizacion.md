@@ -96,7 +96,7 @@ echo PHP_EOL, "contador termina en {$contador} (debería ser 7)", PHP_EOL;
 
 Con los turnos alternados, los dos hilos leen 5, los dos calculan 6 y los dos escriben 6: **se perdió una actualización**. Con `['A', 'A', 'A', 'B', 'B', 'B']` el resultado es correcto, porque cada hilo hizo sus tres pasos sin interrupción.
 
-Esto es una **condición de carrera** (*race condition*): el resultado depende del orden exacto en que se intercalan los hilos. Y lo peor es que ese orden cambia en cada ejecución. El programa puede funcionar bien miles de veces y fallar justo en producción. Por eso la [programación concurrente](/ramos/programacion-avanzada/unidades/03-concurrencia-y-asincronia/index.md) tiene fama de difícil.
+Esto es una **condición de carrera** (*race condition*): el resultado depende del orden exacto en que se intercalan los hilos. Y lo peor es que ese orden cambia en cada ejecución. El programa puede funcionar bien miles de veces y fallar justo en producción. Por eso la [programación concurrente](/ramos/programacion-avanzada/index.md) tiene fama de difícil.
 
 ## La sección crítica
 

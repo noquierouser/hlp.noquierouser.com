@@ -2,7 +2,7 @@
 title: Construyendo un Blockbuster
 description: Un proyecto real en PHP y Laravel, desde el computador vacío hasta el sistema funcionando
 eleventyNavigation:
-    order: 10
+    order: 30
 ---
 Blockbuster es el sistema de un videoclub: un catálogo de películas, socios que las arriendan y las reglas que dicen quién puede llevarse qué. Lo construimos entre todos, en Laravel, y lo vamos haciendo crecer clase a clase.
 
@@ -27,4 +27,4 @@ Antes de escribir código hay que tener dónde escribirlo.
 
 Las etapas siguientes irán apareciendo a medida que avance el proyecto.
 
-Si buscas el material por unidad, está en [Unidades del programa](/ramos/programacion-avanzada/unidades/index.md).
+Si buscas el material según las unidades del programa, está en [Unidades del programa](/ramos/programacion-avanzada/unidades/index.md).
