@@ -27,6 +27,7 @@ Todo está en [Estructuras de datos y algoritmos](/ramos/programacion-avanzada/u
 ## 2. Programación orientada a objetos
 
 1. [Clases y objetos](/ramos/programacion-avanzada/unidades/02-poo-avanzada/clases-y-objetos.md)
+2. [Los primeros modelos](/ramos/programacion-avanzada/construyendo-un-blockbuster/los-primeros-modelos.md)
 
 El resto se trabaja dentro del proyecto, en [Construyendo un Blockbuster](/ramos/programacion-avanzada/construyendo-un-blockbuster/index.md).
 

@@ -200,3 +200,7 @@ En el panel **Commit**, doble clic sobre un archivo abre el `diff` lado a lado: 
 | `git push` | Sube tus commits a GitHub |
 
 La rutina diaria cabe en una línea: **pull, cambiar, revisar, commit, push.**
+
+---
+
+Sigue con **[Los primeros modelos](/ramos/programacion-avanzada/construyendo-un-blockbuster/los-primeros-modelos.md)**.

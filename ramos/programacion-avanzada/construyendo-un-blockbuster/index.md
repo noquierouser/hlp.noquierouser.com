@@ -23,6 +23,10 @@ Antes de escribir código hay que tener dónde escribirlo.
 
 4. [Clonar, cambiar y subir](/ramos/programacion-avanzada/construyendo-un-blockbuster/clonar-cambiar-y-subir.md): bajar un proyecto que ya existe, hacerlo funcionar, modificarlo y publicar tus cambios.
 
+## 4. El modelo de datos
+
+5. [Los primeros modelos](/ramos/programacion-avanzada/construyendo-un-blockbuster/los-primeros-modelos.md): clonar el proyecto del grupo y agregar, cada quien, una pieza al modelo del videoclub: copias, clasificaciones y socios.
+
 ## Lo que viene
 
 Las etapas siguientes irán apareciendo a medida que avance el proyecto.
