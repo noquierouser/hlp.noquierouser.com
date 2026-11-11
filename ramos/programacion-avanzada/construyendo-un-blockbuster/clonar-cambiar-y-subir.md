@@ -34,7 +34,7 @@ Clonar se hace una vez. Lo demás es la rutina de todos los días: traer lo nuev
 En la página del repositorio en GitHub, el botón verde **Code** muestra la dirección. Elige **SSH** y cópiala.
 
 ```bash
-cd ~/Lerd
+cd ~/Proyectos
 git clone git@github.com:USUARIO/blockbuster.git
 cd blockbuster
 ```
@@ -50,7 +50,7 @@ git remote -v
 
 El primero muestra los commits que hicieron otras personas antes que tú. El segundo, la dirección de donde vino.
 
-Desde PhpStorm se hace con **Clone Repository** en la pantalla de bienvenida, o con **Git → Clone** en el menú principal. Pegas la dirección, eliges la carpeta (que sea dentro de `~/Lerd`) y presionas **Clone**.
+Desde PhpStorm se hace con **Clone Repository** en la pantalla de bienvenida, o con **Git → Clone** en el menú principal. Pegas la dirección, eliges la carpeta (que sea dentro de `~/Proyectos`) y presionas **Clone**.
 
 ## 2. Hacer que funcione
 

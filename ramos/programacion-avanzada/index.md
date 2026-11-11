@@ -9,7 +9,7 @@ Aquí va quedando el material del ramo a medida que avanzan las clases: apuntes,
 ## El material, en orden
 
 1. [Estructuras de datos y algoritmos](/ramos/programacion-avanzada/unidades/01-estructuras-de-datos-y-algoritmos/index.md): PHP desde cero, listas, pilas, colas y diccionarios, y cómo saber si una solución es más rápida que otra.
-2. [Clases y objetos](/ramos/programacion-avanzada/unidades/02-poo-avanzada/clases-y-objetos.md): la sintaxis básica, `$this`, `->` y la visibilidad.
+2. [Clases y objetos](/ramos/programacion-avanzada/unidades/02-poo-avanzada/clases-y-objetos.md): la sintaxis básica, el constructor, la visibilidad y cómo ordenar las clases en un proyecto con Composer.
 3. [Construyendo un Blockbuster](/ramos/programacion-avanzada/construyendo-un-blockbuster/index.md): el proyecto del ramo, paso a paso. **Es lo que estamos haciendo ahora.**
 
 Si buscas algo según las unidades de la asignatura, el mapa está en [Unidades del programa](/ramos/programacion-avanzada/unidades/index.md).

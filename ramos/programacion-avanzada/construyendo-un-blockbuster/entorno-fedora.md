@@ -114,11 +114,11 @@ Si algo aparece en rojo, `lerd doctor` revisa el sistema completo y dice qué fa
 ### Una carpeta para tus proyectos
 
 ```bash
-mkdir ~/Lerd
-lerd park ~/Lerd
+mkdir ~/Proyectos
+lerd park ~/Proyectos
 ```
 
-Desde ahora, cada proyecto PHP que pongas dentro de `~/Lerd` queda disponible en el navegador con el nombre de su carpeta: `~/Lerd/mi-proyecto` responde en `http://mi-proyecto.test`. No hay que configurar nada más.
+Desde ahora, cada proyecto PHP que pongas dentro de `~/Proyectos` queda disponible en el navegador con el nombre de su carpeta: `~/Proyectos/mi-proyecto` responde en `http://mi-proyecto.test`. No hay que configurar nada más.
 
 ### La versión de PHP
 

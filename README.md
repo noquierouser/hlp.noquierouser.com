@@ -83,6 +83,7 @@ Todo bloque ` ```php ` cuyo código empiece con `<?php` se puede **editar y ejec
 - Solo se carga `assets/php/ejecutar-php.js` (4 KB), y solo en páginas con bloques PHP. El binario de PHP (`php_8_5.wasm`, 20 MB, unos 8 MB comprimido) se descarga recién la primera vez que alguien presiona "Ejecutar".
 - Si un programa tarda más de 10 segundos (un ciclo infinito, por ejemplo), se detiene sin congelar la página.
 - Sin `input()`: los datos van escritos en el código, igual que en 3v4l.
+- Para mostrar un archivo PHP completo que **no** debe ejecutarse en la página (por ejemplo, uno que depende de `vendor/autoload.php`), abre el bloque con ` ```PHP ` en mayúsculas: se resalta igual, pero no recibe el botón «Ejecutar».
 
 El código fuente está en `scripts/ejecutar-php/`. Para recompilar (por ejemplo, al actualizar la versión de php-wasm en su `package.json`):
 
