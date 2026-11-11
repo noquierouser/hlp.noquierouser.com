@@ -270,28 +270,31 @@ git push -u origin copia
 
 El `-u origin copia` solo hace falta la primera vez: crea la rama en GitHub y la deja enlazada con la tuya.
 
-Ahora entra al repositorio en GitHub. Va a aparecer un aviso con el botón **Compare & pull request**. Un *pull request* es pedirle al equipo que revise tu rama y la sume a `main`. Escribe en la descripción **qué agregaste y cómo probarlo**, y créalo.
+Ahora entra al repositorio en GitHub. Va a aparecer un aviso con el botón **Compare & pull request**. Un *pull request* es pedirle al equipo que revise tu rama y la sume a `main`. Escribe en la descripción **qué agregaste y cómo probarlo**, y créalo. Con eso tu parte está entregada: lo que sigue es la revisión.
 
-## 7. Revisar el trabajo de otra persona
+## 7. La revisión
 
-Nadie fusiona su propio pull request. Abre el de un compañero o compañera y:
+Nadie fusiona su propio pull request. Lo revisa la PM del proyecto, que es quien decide qué entra a `main`. Pueden pasar dos cosas:
 
-1. Lee los cambios en la pestaña **Files changed**.
-2. Bájalo y pruébalo en tu computador:
+- **Lo aprueba y lo fusiona.** Tu modelo ya es parte del proyecto.
+- **Pide cambios.** Te deja comentarios en el pull request. No hay que crear otro: corrige en tu misma rama, haz un commit nuevo y `git push`. El pull request se actualiza solo.
+
+Mientras esperas, mira el trabajo del resto. Leer código ajeno es la mitad del oficio:
+
+1. En GitHub, abre otro pull request y lee los cambios en la pestaña **Files changed**.
+2. Si quieres probarlo en tu computador:
 
     ```bash
     git fetch
     git switch clasificacion
-    composer install
     php artisan migrate:fresh --seed
     ```
 
-3. Corre las consultas de Tinker de ese modelo.
-4. Si funciona, apruébalo con **Review changes → Approve**. Si no, comenta qué falló, con el mensaje de error completo.
+3. Corre las consultas de Tinker de ese modelo. Si algo falla o no se entiende, déjalo como comentario en el pull request, con el mensaje de error completo.
 
 Para volver a tu trabajo: `git switch copia`.
 
-{% alert 'Dos de los tres modelos tocan Pelicula.php, y los tres tocan DatabaseSeeder.php. Al fusionar el segundo pull request, GitHub puede avisar que hay un conflicto: dos personas cambiaron las mismas líneas y Git no sabe con cuál quedarse. No es un error ni culpa de nadie. No lo fuerces: se resuelve en conjunto.', 'info', 'Si aparece un conflicto' %}
+{% alert 'Dos de los tres modelos tocan Pelicula.php, y los tres tocan DatabaseSeeder.php. Al fusionar el segundo pull request puede aparecer un conflicto: dos personas cambiaron las mismas líneas y Git no sabe con cuál quedarse. No es un error ni culpa de nadie, y no te toca arreglarlo: los conflictos los resuelve la PM al fusionar.', 'info', 'Si aparece un conflicto' %}
 
 ## Cuando esté todo fusionado
 
