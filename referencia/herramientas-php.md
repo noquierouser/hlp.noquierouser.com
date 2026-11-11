@@ -21,14 +21,14 @@ En este sitio, además, los ejemplos que empiezan con `<?php` se pueden ejecutar
 ## Para trabajar en serio
 
 - **[Laravel Herd](https://herd.laravel.com)** instala PHP y lo deja listo para usar en Windows y macOS, sin pelear con configuraciones.
-- **[Lerd](https://lerd.sh)** hace lo mismo en Linux. La instalación completa está en [Entorno de trabajo en Fedora](/referencia/entorno-fedora.md).
-- **[PhpStorm](https://www.jetbrains.com/phpstorm/)** es un editor pensado para PHP: autocompleta, avisa errores antes de ejecutar y trae un depurador. Si eres estudiante, puedes pedir una [licencia educativa gratuita](https://www.jetbrains.com/community/education/#students). Para aprender a usarlo, pasa por [Conociendo PhpStorm](/referencia/conociendo-phpstorm.md).
+- **[Lerd](https://lerd.sh)** hace lo mismo en Linux. La instalación completa está en [Entorno de trabajo en Fedora](/ramos/programacion-avanzada/construyendo-un-blockbuster/entorno-fedora.md).
+- **[PhpStorm](https://www.jetbrains.com/phpstorm/)** es un editor pensado para PHP: autocompleta, avisa errores antes de ejecutar y trae un depurador. Si eres estudiante, puedes pedir una [licencia educativa gratuita](https://www.jetbrains.com/community/education/#students). Para aprender a usarlo, pasa por [Conociendo PhpStorm](/ramos/programacion-avanzada/construyendo-un-blockbuster/conociendo-phpstorm.md).
 
 Si algo falla al instalar, guarda el mensaje de error completo. Sin el mensaje, nadie te puede ayudar.
 
 ## Para guardar y compartir código: GitHub
 
-Crea una cuenta en [GitHub](https://github.com). Ahí vas a guardar tus proyectos y trabajar en equipo con control de versiones, así que mejor tenerla lista desde el principio. Cómo crearla y publicar tu primer proyecto está en [De tu computador a GitHub](/ramos/programacion-avanzada/unidades/04-calidad-e-integracion/de-tu-computador-a-github.md).
+Crea una cuenta en [GitHub](https://github.com). Ahí vas a guardar tus proyectos y trabajar en equipo con control de versiones, así que mejor tenerla lista desde el principio. Cómo crearla y publicar tu primer proyecto está en [De tu computador a GitHub](/ramos/programacion-avanzada/construyendo-un-blockbuster/de-tu-computador-a-github.md).
 
 ## El manual
 

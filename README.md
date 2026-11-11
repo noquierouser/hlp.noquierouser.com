@@ -26,8 +26,11 @@ index.md                 Portada
 settings.json            Configuración de LibDoc (título, idioma, enlaces)
 ramos/                   Ramos vigentes
   <ramo>/                slug estable y sin año (ej. programacion-avanzada)
-    index.md             Presentación breve y listado de unidades
+    index.md             Presentación breve, proyecto en curso y listado de unidades
+    <proyecto>/          Recorrido de un proyecto, en el orden de las clases (ej. construyendo-un-blockbuster)
+      index.md           Etapas del proyecto y sus páginas, en orden
     unidades/
+      index.md           Índice según el programa: cada unidad con todo su material, esté donde esté
       01-<tema>/
         index.md         De qué va la unidad, temas en orden y diapositivas
         <tema>.md        Un tema (ej. arrays.md), con ejemplos ejecutables y ejercicios
@@ -52,7 +55,7 @@ _includes/hlp_pagina.liquid  Layout propio: envuelve el de LibDoc y agrega el ej
 - **URLs sin año**, para que se mantengan entre semestres. Cuando deje de dictar un ramo, su carpeta pasa a `archivo/`.
 - **Navegación automática.** Dentro de `ramos/`, `referencia/` y `archivo/`, [`scripts/navegacion.js`](scripts/navegacion.js) arma el menú a partir de las carpetas:
   - el título del menú es el `title` de la página;
-  - el padre es el `index.md` más cercano en una carpeta superior. Una carpeta sin `index.md`, como `unidades/`, no aparece como nivel.
+  - el padre es el `index.md` más cercano en una carpeta superior. Una carpeta sin `index.md` no aparece como nivel.
   - El orden se define con `eleventyNavigation.order`. Hoy se usa Ramos 10, Referencia 80 y Archivo 90; dentro de cada nivel, de 10 en 10.
   - Para sacar una página del menú, usa `eleventyNavigation: false`.
 
