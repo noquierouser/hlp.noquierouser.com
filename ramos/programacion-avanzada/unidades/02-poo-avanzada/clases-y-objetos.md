@@ -137,12 +137,14 @@ Hasta aquí todo cabía en un solo archivo. En un proyecto de verdad hay decenas
 
 [Composer](https://getcomposer.org) resuelve eso. Además de descargar bibliotecas, sabe **cargar tus clases solo**, en el momento en que las usas. Esta parte no se puede ejecutar en la página: se hace en tu computador, con el [entorno instalado](/ramos/programacion-avanzada/construyendo-un-blockbuster/entorno-fedora.md).
 
+El ejemplo es chico a propósito: un programa que saluda a alguien, dice qué día es y cuenta cuánto falta para Año Nuevo.
+
 ### 1. Armar el proyecto
 
 ```bash
 cd ~/Proyectos
-mkdir videoclub
-cd videoclub
+mkdir saludo
+cd saludo
 mkdir src
 ```
 
@@ -150,55 +152,41 @@ mkdir src
 
 ```json
 {
-    "name": "tu-usuario/videoclub",
+    "name": "tu-usuario/saludo",
     "autoload": {
         "psr-4": {
-            "Videoclub\\": "src/"
+            "App\\": "src/"
         }
     }
 }
 ```
 
-La parte de `autoload` es un acuerdo: **toda clase cuyo nombre empiece con `Videoclub\` está en la carpeta `src/`**. Ese acuerdo es un estándar llamado [PSR-4](https://www.php-fig.org/psr/psr-4/), y lo siguen prácticamente todos los proyectos PHP.
+La parte de `autoload` es un acuerdo: **toda clase cuyo nombre empiece con `App\` está en la carpeta `src/`**. Ese acuerdo es un estándar llamado [PSR-4](https://www.php-fig.org/psr/psr-4/), y lo siguen prácticamente todos los proyectos PHP.
 
 ### 2. La clase, en su archivo
 
-Crea `src/Pelicula.php` con la clase de más arriba y una línea nueva:
+Crea `src/Saludador.php`:
 
 ```PHP
 <?php
 declare(strict_types=1);
 
-namespace Videoclub;
+namespace App;
 
-class Pelicula {
-    private bool $arrendada = false;
-
+class Saludador {
     public function __construct(
-        public readonly string $titulo,
-        public readonly int $anio,
+        private readonly string $nombre,
     ) {}
 
-    public function arrendar(): void {
-        if ($this->arrendada) {
-            throw new \RuntimeException("{$this->titulo} ya está arrendada");
-        }
-        $this->arrendada = true;
-    }
-
-    public function devolver(): void {
-        $this->arrendada = false;
-    }
-
-    public function estaDisponible(): bool {
-        return !$this->arrendada;
+    public function saludar(): string {
+        return "Hola, {$this->nombre}.";
     }
 }
 ```
 
-El [`namespace`](https://www.php.net/manual/es/language.namespaces.rationale.php) es el apellido de la clase. Su nombre completo ahora es `Videoclub\Pelicula`, y eso evita choques: tu `Pelicula` y la `Pelicula` de una biblioteca ajena pueden convivir porque tienen apellidos distintos.
+Lo único nuevo es el [`namespace`](https://www.php.net/manual/es/language.namespaces.rationale.php): es el apellido de la clase. Su nombre completo ahora es `App\Saludador`, y eso evita choques: tu `Saludador` y el de una biblioteca ajena pueden convivir porque tienen apellidos distintos.
 
-Por lo mismo cambió `RuntimeException` a `\RuntimeException`: la barra inicial dice "esta clase es de PHP, no la busques dentro de `Videoclub`".
+Fíjate también en que `saludar()` **devuelve** el texto en vez de mostrarlo con `echo`. La clase arma el saludo; quien la usa decide qué hacer con él.
 
 ### 3. Generar el cargador
 
@@ -210,7 +198,7 @@ Aparece una carpeta `vendor/` con un archivo `autoload.php`. Ese archivo es el q
 
 ### 4. Usar la clase
 
-Crea `prueba.php` en la raíz del proyecto:
+Crea `saludo.php` en la raíz del proyecto:
 
 ```PHP
 <?php
@@ -218,38 +206,72 @@ declare(strict_types=1);
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Videoclub\Pelicula;
+use App\Saludador;
 
-$pelicula = new Pelicula("Matrix", 1999);
-$pelicula->arrendar();
+$saludador = new Saludador("Ana");
 
-echo $pelicula->titulo, ": ";
-echo $pelicula->estaDisponible() ? "disponible" : "arrendada", PHP_EOL;
+echo $saludador->saludar(), PHP_EOL;
 ```
 
 Y ejecútalo desde la terminal:
 
 ```bash
-php prueba.php
+php saludo.php
 ```
 
 ```plaintext
-Matrix: arrendada
+Hola, Ana.
 ```
 
-Fíjate en lo que **no** hay: ningún `require` de `src/Pelicula.php`. El único `require` es el del cargador, una vez. Cuando PHP llega a `new Pelicula(...)`, el cargador traduce `Videoclub\Pelicula` a `src/Pelicula.php` y lo carga solo. Puedes agregar veinte clases más a `src/` sin tocar esa línea.
+Fíjate en lo que **no** hay: ningún `require` de `src/Saludador.php`. El único `require` es el del cargador, una vez. Cuando PHP llega a `new Saludador(...)`, el cargador traduce `App\Saludador` a `src/Saludador.php` y lo carga solo. Puedes agregar veinte clases más a `src/` sin tocar esa línea.
 
-El [`use`](https://www.php.net/manual/es/language.namespaces.importing.php) de arriba es solo comodidad: permite escribir `Pelicula` en vez de `Videoclub\Pelicula` cada vez. En PhpStorm no lo escribas a mano: escribe `Pelicula`, y `Alt+Enter` lo importa.
+El [`use`](https://www.php.net/manual/es/language.namespaces.importing.php) de arriba es solo comodidad: permite escribir `Saludador` en vez de `App\Saludador` cada vez. En PhpStorm no lo escribas a mano: escribe `Saludador`, y `Alt+Enter` lo importa.
 
 ### 5. Sumar una biblioteca
 
-El mismo cargador sirve para el código de otras personas. Las fechas, por ejemplo, las resuelve muy bien [Carbon](https://carbon.nesbot.com):
+Falta la fecha y la cuenta para Año Nuevo. Calcular con fechas a mano es más enredado de lo que parece, y alguien ya lo resolvió bien: la biblioteca [Carbon](https://carbon.nesbot.com). Se instala con un comando:
 
 ```bash
 composer require nesbot/carbon
 ```
 
-Composer la descarga en `vendor/` y la anota en `composer.json`. Ahora puedes usarla en `prueba.php` igual que tu propia clase:
+Composer la descarga en `vendor/` y la anota en `composer.json`. El mismo cargador que encuentra tus clases encuentra las de Carbon, así que se usa igual. Deja `src/Saludador.php` así:
+
+```PHP
+<?php
+declare(strict_types=1);
+
+namespace App;
+
+use Carbon\Carbon;
+
+class Saludador {
+    public function __construct(
+        private readonly string $nombre,
+    ) {}
+
+    public function saludar(): string {
+        return "Hola, {$this->nombre}.";
+    }
+
+    public function fechaDeHoy(): string {
+        return "Hoy es " . Carbon::today()->format('d/m/Y') . ".";
+    }
+
+    public function diasParaAnioNuevo(): int {
+        $hoy = Carbon::today();
+        $anioNuevo = Carbon::create($hoy->year + 1, 1, 1);
+
+        return (int) $hoy->diffInDays($anioNuevo);
+    }
+}
+```
+
+- `Carbon::today()` es el día de hoy, a medianoche.
+- `Carbon::create(...)` arma una fecha a partir de año, mes y día: aquí, el 1 de enero del año que viene.
+- `diffInDays()` cuenta los días entre las dos. Devuelve un número con decimales, y por eso el `(int)`.
+
+Y en `saludo.php` agrega las dos líneas nuevas:
 
 ```PHP
 <?php
@@ -257,16 +279,26 @@ declare(strict_types=1);
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Carbon\Carbon;
-use Videoclub\Pelicula;
+use App\Saludador;
 
-$pelicula = new Pelicula("Matrix", 1999);
-$pelicula->arrendar();
+$saludador = new Saludador("Ana");
 
-$devolucion = Carbon::now()->addDays(3);
-
-echo "{$pelicula->titulo} se devuelve el ", $devolucion->format('d/m/Y'), PHP_EOL;
+echo $saludador->saludar(), PHP_EOL;
+echo $saludador->fechaDeHoy(), PHP_EOL;
+echo "Faltan ", $saludador->diasParaAnioNuevo(), " días para Año Nuevo.", PHP_EOL;
 ```
+
+```bash
+php saludo.php
+```
+
+```plaintext
+Hola, Ana.
+Hoy es 11/11/2026.
+Faltan 51 días para Año Nuevo.
+```
+
+La fecha y la cuenta van a ser las del día en que lo ejecutes. `saludo.php` no cambió casi nada, y no tiene idea de que existe Carbon: eso quedó encerrado en la clase.
 
 ### Qué quedó en la carpeta
 
@@ -274,12 +306,13 @@ echo "{$pelicula->titulo} se devuelve el ", $devolucion->format('d/m/Y'), PHP_EO
 |---|---|---|
 | `composer.json` | Lo que el proyecto necesita y dónde están tus clases | Sí |
 | `composer.lock` | Las versiones exactas que se instalaron | Sí |
-| `src/` | Tu código | Sí |
+| `src/` | Tus clases | Sí |
+| `saludo.php` | El archivo que se ejecuta | Sí |
 | `vendor/` | Las bibliotecas descargadas y el cargador | No: se regenera con `composer install` |
 
 ### Esto mismo hace Laravel
 
-Abre el `composer.json` de un proyecto Laravel y busca la sección `autoload`: dice que `App\` está en `app/`. Por eso `App\Models\User` vive en `app/Models/User.php`, y por eso nunca vas a ver un `require` en el código de Blockbuster. Es exactamente lo que acabas de armar a mano, con más carpetas.
+Abre el `composer.json` de un proyecto Laravel y busca la sección `autoload`: dice que `App\` está en `app/`. Por eso `App\Models\User` vive en `app/Models/User.php`, y por eso nunca vas a ver un `require` en el código de Blockbuster. Es exactamente lo que acabas de armar a mano, con más carpetas. Y Carbon ya viene incluido: Laravel lo usa para todas sus fechas.
 
 {% alert 'Esta página va a ir creciendo.', 'info' %}
 
