@@ -93,7 +93,7 @@ La llave se crea **una vez por computador**. Si trabajas en dos equipos, cada un
 [Composer](https://getcomposer.org) es el gestor de dependencias de PHP: descarga las bibliotecas que un proyecto necesita. También sabe crear un proyecto nuevo a partir de una plantilla.
 
 ```bash
-cd ~/Lerd
+cd ~/Proyectos
 composer create-project laravel/laravel mi-proyecto
 cd mi-proyecto
 ```
@@ -105,7 +105,7 @@ Ese comando hace bastante más que copiar archivos:
 3. Crea el archivo `.env` con la configuración de tu computador, y le genera una clave.
 4. Crea una base de datos SQLite y las tablas iniciales.
 
-Como la carpeta está dentro de `~/Lerd`, el proyecto ya tiene dirección. Abre `http://mi-proyecto.test` en el navegador, o ejecuta `lerd open`, y deberías ver la página de bienvenida de Laravel.
+Como la carpeta está dentro de `~/Proyectos`, el proyecto ya tiene dirección. Abre `http://mi-proyecto.test` en el navegador, o ejecuta `lerd open`, y deberías ver la página de bienvenida de Laravel.
 
 Ábrelo también en PhpStorm: **Open** y eliges la carpeta. Si no conoces el programa, pasa por [Conociendo PhpStorm](/ramos/programacion-avanzada/construyendo-un-blockbuster/conociendo-phpstorm.md).
 

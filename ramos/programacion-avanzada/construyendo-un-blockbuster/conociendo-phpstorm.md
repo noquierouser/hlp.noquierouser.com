@@ -13,7 +13,7 @@ Si todavía no lo tienes instalado, parte por [Entorno de trabajo en Fedora](/ra
 
 ## Abrir un proyecto
 
-En PhpStorm, **un proyecto es una carpeta**. No hay que importar ni convertir nada: en la pantalla de bienvenida eliges **Open** y seleccionas la carpeta del proyecto, por ejemplo `~/Lerd/mi-proyecto`.
+En PhpStorm, **un proyecto es una carpeta**. No hay que importar ni convertir nada: en la pantalla de bienvenida eliges **Open** y seleccionas la carpeta del proyecto, por ejemplo `~/Proyectos/mi-proyecto`.
 
 La primera vez pasan dos cosas:
 
