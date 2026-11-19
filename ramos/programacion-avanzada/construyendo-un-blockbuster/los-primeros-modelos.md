@@ -308,3 +308,7 @@ php artisan migrate:fresh --seed
 ```
 
 Ahora tu Blockbuster tiene películas con clasificación, copias en la estantería y socios. Falta lo que los une: el **arriendo**, que junta a un socio con una copia y tiene que revisar que la copia esté disponible, que el socio esté activo y que tenga edad para verla. Las tres piezas que acaban de construir son justo las que necesita.
+
+---
+
+Sigue con **[El arriendo](/ramos/programacion-avanzada/construyendo-un-blockbuster/el-arriendo.md)**.

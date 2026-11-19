@@ -26,6 +26,7 @@ Antes de escribir código hay que tener dónde escribirlo.
 ## 4. El modelo de datos
 
 5. [Los primeros modelos](/ramos/programacion-avanzada/construyendo-un-blockbuster/los-primeros-modelos.md): clonar el proyecto del grupo y agregar, cada quien, una pieza al modelo del videoclub: copias, clasificaciones y socios.
+6. [El arriendo](/ramos/programacion-avanzada/construyendo-un-blockbuster/el-arriendo.md): unir socios, copias y clasificaciones, con cada regla en el modelo que la conoce.
 
 ## Lo que viene
 
