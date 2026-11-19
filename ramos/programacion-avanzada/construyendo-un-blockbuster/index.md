@@ -27,6 +27,11 @@ Antes de escribir código hay que tener dónde escribirlo.
 
 5. [Los primeros modelos](/ramos/programacion-avanzada/construyendo-un-blockbuster/los-primeros-modelos.md): clonar el proyecto del grupo y agregar, cada quien, una pieza al modelo del videoclub: copias, clasificaciones y socios.
 
+## 5. Lo que se ve
+
+6. [Las primeras pantallas](/ramos/programacion-avanzada/construyendo-un-blockbuster/las-primeras-pantallas.md): rutas, controladores y vistas para mostrar películas, socios, copias y géneros en el navegador.
+7. [Trabajar en equipo sobre el mismo código](/ramos/programacion-avanzada/construyendo-un-blockbuster/trabajar-en-equipo.md): ramas compartidas, conflictos en PhpStorm y correcciones a un pull request.
+
 ## Lo que viene
 
 Las etapas siguientes irán apareciendo a medida que avance el proyecto.
