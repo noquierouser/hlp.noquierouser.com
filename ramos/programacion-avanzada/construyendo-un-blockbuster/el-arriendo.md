@@ -2,7 +2,7 @@
 title: El arriendo
 description: Unir socios, copias y clasificaciones en la operación que le da sentido al videoclub
 eleventyNavigation:
-    order: 60
+    order: 80
 tags:
     - laravel
     - eloquent

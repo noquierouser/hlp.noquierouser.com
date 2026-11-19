@@ -311,4 +311,4 @@ Ahora tu Blockbuster tiene películas con clasificación, copias en la estanter�
 
 ---
 
-Sigue con **[El arriendo](/ramos/programacion-avanzada/construyendo-un-blockbuster/el-arriendo.md)**.
+Sigue con **[Las primeras pantallas](/ramos/programacion-avanzada/construyendo-un-blockbuster/las-primeras-pantallas.md)**.
