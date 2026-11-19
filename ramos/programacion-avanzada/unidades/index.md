@@ -28,6 +28,7 @@ Todo está en [Estructuras de datos y algoritmos](/ramos/programacion-avanzada/u
 
 1. [Clases y objetos](/ramos/programacion-avanzada/unidades/02-poo-avanzada/clases-y-objetos.md)
 2. [Los primeros modelos](/ramos/programacion-avanzada/construyendo-un-blockbuster/los-primeros-modelos.md)
+3. [Las primeras pantallas](/ramos/programacion-avanzada/construyendo-un-blockbuster/las-primeras-pantallas.md)
 
 El resto se trabaja dentro del proyecto, en [Construyendo un Blockbuster](/ramos/programacion-avanzada/construyendo-un-blockbuster/index.md).
 
@@ -48,3 +49,4 @@ Control de versiones:
 
 1. [De tu computador a GitHub](/ramos/programacion-avanzada/construyendo-un-blockbuster/de-tu-computador-a-github.md)
 2. [Clonar, cambiar y subir](/ramos/programacion-avanzada/construyendo-un-blockbuster/clonar-cambiar-y-subir.md)
+3. [Trabajar en equipo sobre el mismo código](/ramos/programacion-avanzada/construyendo-un-blockbuster/trabajar-en-equipo.md)
